@@ -20,28 +20,31 @@
   <body>
   
       <div class="container">
-        <form class="form-signin" action="" method="post">
+        <form class="form-signin">
        
         <h2 class="form-signin-heading">My BMI Check</h2>
         
-        <label for="input-email" class="sr-only">Height:(cm)</label>
-        <input type="text"  class="form-control" placeholder="height" autofocus id="height" name="email" value="">
+        <label for="height" class="sr-only">Height:(cm)</label>
+        <input type="text"  class="form-control" placeholder="height" autofocus id="height" name="height" value="">
         
         <label for="input-password" class="sr-only">Weight:(kg)</label>
         <input type="text"  class="form-control" placeholder="weight" autofocus  name="password" id="weight">
         
-        <input class="btn btn-lg btn-primary btn-block" type="submit" name="Calculate BMI" onclick="calculateBMI(); "/>
-        
-      </form>
-        <div class="output"></div>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" name="Calculate BMI" id="sub"/>
+            
+        <br><br>
+        <div id="output"></div>
      </div> <!-- /container -->
-     
+         <br><br>
+      </form>
+  
     <footer class="blog-footer">
       <p>&copy; <a href="#">Fizure.inc</a> by <a href="#">@Andrew</a>.</p>
      
     </footer>
-
+     
     <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

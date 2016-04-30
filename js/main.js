@@ -1,7 +1,7 @@
-
-function calculateBMI() {
+$(document).ready(function(){
     
-    var height = document.getElementById("height").value;
+    $('#sub').on('click', function(){
+         var height = document.getElementById("height").value;
     var weight = document.getElementById("weight").value;
     
     var heightInMeter = height/100;
@@ -11,5 +11,8 @@ function calculateBMI() {
     
     
     //outputing bmi
-    
-}
+    document.getElementById("output").innerHTML = "Your BMI is " + yourBMI;
+    });
+});
+
+
