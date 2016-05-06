@@ -19,10 +19,16 @@
 
   <body>
 
-      <div class="container">
+    <div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+
+      <div class="inner cover">
+        <h1 class="cover-heading">Full screen background cover page.</h1>
+
         <form class="form-signin">
 
-        <h2 class="form-signin-heading">My BMI</h2>
+        <h2 class="form-signin-heading" id="heade">My BMI</h2>
 
         <label for="height" class="sr-only">Height:(cm)</label>
         <input type="text"  class="form-control" placeholder="height in:cm" autofocus id="height" name="height">
@@ -34,15 +40,23 @@
 
         <br><br>
         <div id="output"></div>
-     </div> <!-- /container -->
+
          <br><br>
       </form>
 
-    <footer class="blog-footer">
-      <p>&copy; <a href="#">Fizure.inc</a> by <a href="#">@Andrew</a>.</p>
+      </div>
 
-    </footer>
+      <div class="mastfoot">
+        <div class="inner">
+          <!-- Validation -->
 
+          <p>© 2014 Your Name ~ <a href=
+          "http://getbootstrap.com/">Bootstrap</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
