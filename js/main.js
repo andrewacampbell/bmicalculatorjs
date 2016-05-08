@@ -26,7 +26,7 @@ $(document).ready(function() {
             result += "<br/> you are obese";
       }
 
-      document.getElementById("output").innerHTML = result;
+      document.getElementById("success").innerHTML = result;
 
     }else{
       alert("Please enter a number");

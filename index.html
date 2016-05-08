@@ -17,18 +17,20 @@
     <link href="css/signin.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="overlay">
 
   <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
 
       <div class="inner cover">
-        <h1 class="cover-heading">Full screen background cover page.</h1>
+        <h3 class="cover-heading">BMI (Body Mass Index) is a measurement of
+           body fat based on height and weight that
+          applies to both men and women between the ages of 18 and 65 years.</h3>
 
         <form class="form-signin">
 
-        <h2 class="form-signin-heading" id="heade">My BMI</h2>
+        <h2 class="form-signin-heading" id="heade">My BMI Checker</h2>
 
         <label for="height" class="sr-only">Height:(cm)</label>
         <input type="text"  class="form-control" placeholder="height in:cm" autofocus id="height" name="height">
@@ -39,6 +41,7 @@
         <button class="btn btn-lg btn-primary btn-block" type="button"id="sub">Calculate bmi</button>
 
         <br><br>
+         <div id="success" class="alert alert-success white">Success!</div>
         <div id="output"></div>
 
          <br><br>
@@ -50,8 +53,8 @@
         <div class="inner">
           <!-- Validation -->
 
-          <p>© 2014 Your Name ~ <a href=
-          "http://getbootstrap.com/">Bootstrap</a></p>
+          <p>© Fizure.inc 2016<a href=
+          "https://github.com/andrewacampbell">MyGitHub</a></p>
         </div>
       </div>
     </div>

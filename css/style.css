@@ -28,14 +28,12 @@ a:hover {
 /*
  * Base structure
  */
-body{
-  padding: 0px;
-  margin:  0px;
-}
+
+
 html,
 body {
 /*css for full size background image*/
-  background: url(img2.jpg) no-repeat center center fixed;
+  background: url(img2.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,23 +48,38 @@ body {
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0,0,0,0.5); /*dim the background*/
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
   width: 100%;
   height: inherit; /* For at least Firefox */
   min-height: 100%;
-
 }
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
   height: inherit;;
-
 }
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+}
+
+.cover-heading{
+  color:#ffffff;
+}
+
+.alert{
+  display: none;
 }
 
 /* Padding for spacing */
