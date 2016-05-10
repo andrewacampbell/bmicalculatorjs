@@ -1,13 +1,4 @@
-/*
 
-* Based on Cover by https://twitter.com/mdo"  @mdo
-* added cover image and background color to match (green)
-*
-* Globals
-
-*/
-
-/* Links */
 a,
 a:focus,
 a:hover {
@@ -74,12 +65,26 @@ body {
   margin-left: auto;
 }
 
-.cover-heading{
-  color:#ffffff;
+.maintext .cover-heading{
+  color:#ecf0f1;
+  font-size: 18px;
+  margin: 3px;
+  text-align: center;;
 }
+.maintext ul{
+  font-size: 18px;
+  list-style: none;
+  margin: 15px 0 5px 0;;
+  float: inherit;
+  color: #ecf0f1;
+
+}
+
 
 .alert{
   display: none;
+  color:#990000;
+  font-size: 19px;
 }
 
 /* Padding for spacing */
@@ -167,6 +172,7 @@ body {
     position: fixed;
     top: 0;
   }
+
   .mastfoot {
     position: fixed;
     bottom: 0;
@@ -180,7 +186,9 @@ body {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+
   }
+
 }
 
 @media (min-width: 992px) {
@@ -188,5 +196,9 @@ body {
   .mastfoot,
   .cover-container {
     width: 700px;
+
+  }
+  .cover-heading{
+    font-size: 18px;
   }
 }

@@ -10,7 +10,7 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>myBmi</title>
-
+    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -22,39 +22,46 @@
   <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
+      <form class="form-signin">
 
+      <h1 class="form-signin-heading" id="heade">My BMI Checker</h1>
+
+      <label for="height" class="sr-only">Height:(cm)</label>
+      <input type="text"  class="form-control" placeholder="height in:cm" autofocus id="height" name="height">
+
+      <label for="weight" class="sr-only">Weight:(kg)</label>
+      <input type="text"  class="form-control" placeholder="weight in:kg" autofocus  name="weight" id="weight">
+
+      <button class="btn btn-lg btn-primary btn-block" type="button"id="sub">Calculate bmi</button>
+
+      <br><br>
+       <div id="success" class="alert alert-success white">Success!</div>
+      <div id="output"></div>
+
+       <br><br>
+    </form>
       <div class="inner cover">
-        <h3 class="cover-heading">BMI (Body Mass Index) is a measurement of
-           body fat based on height and weight that
-          applies to both men and women between the ages of 18 and 65 years.</h3>
-
-        <form class="form-signin">
-
-        <h2 class="form-signin-heading" id="heade">My BMI Checker</h2>
-
-        <label for="height" class="sr-only">Height:(cm)</label>
-        <input type="text"  class="form-control" placeholder="height in:cm" autofocus id="height" name="height">
-
-        <label for="weight" class="sr-only">Weight:(kg)</label>
-        <input type="text"  class="form-control" placeholder="weight in:kg" autofocus  name="weight" id="weight">
-
-        <button class="btn btn-lg btn-primary btn-block" type="button"id="sub">Calculate bmi</button>
-
-        <br><br>
-         <div id="success" class="alert alert-success white">Success!</div>
-        <div id="output"></div>
-
-         <br><br>
-      </form>
+        <div class="maintext">
+          <h3 class="cover-heading">BMI (Body Mass Index) is a measurement of
+             body fat based on height and weight that
+            applies to both men and women between the ages of 18 and 65 years.
+          </h3>
+          <ul>
+            <h3>BMI Categories: </h3>
+            <li>Underweight = <18.5</li>
+            <li>Normal weight = 18.5–24.9</li>
+            <li>Overweight = 25–29.9 </li>
+            <li>Obesity = BMI of 30 or greater</li>
+          </ul>
+        </div>
 
       </div>
 
       <div class="mastfoot">
         <div class="inner">
           <!-- Validation -->
-
-          <p>© Fizure.inc 2016<a href=
-          "https://github.com/andrewacampbell">MyGitHub</a></p>
+          <p>© Fizure.inc 2016 <a href=
+          "https://github.com/andrewacampbell" target="_blank"> MyGitHub </a></p>
         </div>
       </div>
     </div>

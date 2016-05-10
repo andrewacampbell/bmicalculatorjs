@@ -1,35 +1,40 @@
 $(document).ready(function() {
 
-    $('#sub').on('click', function(){
+    $('#sub').on('click', function() {
+
     var height = document.getElementById("height").value;
     var weight = document.getElementById("weight").value;
 
-    if((height%1>=0) && (weight%1>=0)) {
+    if((height%2)>=1 && (weight%2)>=1) {
       var heightInMeter = height/100;
       var yourBMI = weight/(heightInMeter*heightInMeter);
 
       var result = "Your BMI is " + yourBMI.toFixed(2);
 
-      if(yourBMI<=18.5){
-          result += "<br/> you are under weight";
+      if(yourBMI <= 18.5){
+          result += "<br/> you are under weight ";
 
       }else if(yourBMI > 18.5 && yourBMI <= 24.9){
 
-            result += "<br/> you are normal weight";
+            result += "<br/> you are normal weight perfect!";
 
-      }else if(yourBMI > 24.9 && yourBMI <= 24.9){
+      }else if(yourBMI > 24.9 && yourBMI <= 29.9){
 
-            result += "<br/> you are overweight ";
+            result += "<br/> you are overweight watch yourself";
 
-      }else{
+      }else {
 
-            result += "<br/> you are obese";
+            result += "<br/> you are obese be careful!!";
       }
 
       document.getElementById("success").innerHTML = result;
 
-    }else{
+      $(".alert").fadeIn("slow");
+
+    }else {
+
       alert("Please enter a number");
+
     }
 
     });
